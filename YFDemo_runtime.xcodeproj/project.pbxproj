@@ -20,6 +20,7 @@
 		18188B19207F2DBA00383714 /* UIImage+YFCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 18188B18207F2DBA00383714 /* UIImage+YFCategory.m */; };
 		18188B20207F30BE00383714 /* 布鲁克.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18188B1E207F30BE00383714 /* 布鲁克.jpeg */; };
 		18188B21207F30BE00383714 /* 路飞.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18188B1F207F30BE00383714 /* 路飞.jpeg */; };
+		18188B23207F3DF100383714 /* github.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18188B22207F3DF100383714 /* github.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		18188B18207F2DBA00383714 /* UIImage+YFCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YFCategory.m"; sourceTree = "<group>"; };
 		18188B1E207F30BE00383714 /* 布鲁克.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "布鲁克.jpeg"; sourceTree = "<group>"; };
 		18188B1F207F30BE00383714 /* 路飞.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "路飞.jpeg"; sourceTree = "<group>"; };
+		18188B22207F3DF100383714 /* github.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = github.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				18188B18207F2DBA00383714 /* UIImage+YFCategory.m */,
 				18188B1E207F30BE00383714 /* 布鲁克.jpeg */,
 				18188B1F207F30BE00383714 /* 路飞.jpeg */,
+				18188B22207F3DF100383714 /* github.jpg */,
 			);
 			path = method_exchange;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			files = (
 				18188AC4207EE88200383714 /* LaunchScreen.storyboard in Resources */,
 				18188AC1207EE88200383714 /* Assets.xcassets in Resources */,
+				18188B23207F3DF100383714 /* github.jpg in Resources */,
 				18188ABF207EE88200383714 /* Main.storyboard in Resources */,
 				18188B20207F30BE00383714 /* 布鲁克.jpeg in Resources */,
 				18188B21207F30BE00383714 /* 路飞.jpeg in Resources */,

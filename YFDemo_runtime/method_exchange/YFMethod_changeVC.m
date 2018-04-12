@@ -19,12 +19,13 @@
     // Do any additional setup after loading the view.
 
     UIImageView *image1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 100, 100)];
+    //利用方法转换将布鲁克图片换成路飞  其他的不受影响
     image1.image = [UIImage imageNamed:@"布鲁克.jpeg"];
     image1.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:image1];
 
     UIImageView *image2 = [[UIImageView alloc] initWithFrame:CGRectMake(100, 140, 100, 100)];
-    image2.image = [UIImage imageNamed:@"路飞.jpeg"];
+    image2.image = [UIImage imageNamed:@"github.jpg"];
     [self.view addSubview:image2];
 
 }
