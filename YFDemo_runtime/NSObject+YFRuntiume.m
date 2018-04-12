@@ -62,6 +62,30 @@
 }
 
 
++ (void)swizzleSelector:(SEL)originalSelector withSelector:(SEL)swizzledSelector withClass:(__unsafe_unretained Class)classType{
+    Class class = classType;
+
+    Method originalMethod = class_getInstanceMethod(class, originalSelector);
+    Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+    BOOL didAddMethodInit=class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+
+    if (didAddMethodInit) {
+        class_addMethod(class, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+    }else{
+        method_exchangeImplementations(originalMethod, swizzledMethod);
+    }
+}
+
++ (void)swizzleClassSelector:(SEL)originalSelector withClassSelector:(SEL)swizzledSelector withClass:(__unsafe_unretained Class)classType{
+    Class class = classType;
+    NSLog(@"++++%@", NSStringFromClass(class));
+    Method originalMethod = class_getClassMethod(class, originalSelector);
+    Method swizzledMethod = class_getClassMethod(class, swizzledSelector);
+    if ((int)originalMethod != 0 && (int)swizzledMethod != 0) {
+        method_exchangeImplementations(originalMethod, swizzledMethod);
+    }
+}
+
 
 
 @end

@@ -16,6 +16,10 @@
 		18188AD0207EE8D200383714 /* YFObjc_msgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 18188ACF207EE8D200383714 /* YFObjc_msgSend.m */; };
 		18188AD3207EE8F100383714 /* YFPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18188AD2207EE8F100383714 /* YFPersonModel.m */; };
 		18188AD9207EF31000383714 /* NSObject+YFRuntiume.m in Sources */ = {isa = PBXBuildFile; fileRef = 18188AD8207EF30F00383714 /* NSObject+YFRuntiume.m */; };
+		18188B16207F2D7600383714 /* YFMethod_changeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18188B15207F2D7600383714 /* YFMethod_changeVC.m */; };
+		18188B19207F2DBA00383714 /* UIImage+YFCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 18188B18207F2DBA00383714 /* UIImage+YFCategory.m */; };
+		18188B20207F30BE00383714 /* 布鲁克.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18188B1E207F30BE00383714 /* 布鲁克.jpeg */; };
+		18188B21207F30BE00383714 /* 路飞.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18188B1F207F30BE00383714 /* 路飞.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,12 @@
 		18188AD2207EE8F100383714 /* YFPersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPersonModel.m; sourceTree = "<group>"; };
 		18188AD7207EF30F00383714 /* NSObject+YFRuntiume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YFRuntiume.h"; sourceTree = "<group>"; };
 		18188AD8207EF30F00383714 /* NSObject+YFRuntiume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YFRuntiume.m"; sourceTree = "<group>"; };
+		18188B14207F2D7600383714 /* YFMethod_changeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFMethod_changeVC.h; sourceTree = "<group>"; };
+		18188B15207F2D7600383714 /* YFMethod_changeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFMethod_changeVC.m; sourceTree = "<group>"; };
+		18188B17207F2DBA00383714 /* UIImage+YFCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YFCategory.h"; sourceTree = "<group>"; };
+		18188B18207F2DBA00383714 /* UIImage+YFCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YFCategory.m"; sourceTree = "<group>"; };
+		18188B1E207F30BE00383714 /* 布鲁克.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "布鲁克.jpeg"; sourceTree = "<group>"; };
+		18188B1F207F30BE00383714 /* 路飞.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "路飞.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,7 @@
 				18188ABB207EE88200383714 /* ViewController.m */,
 				18188AD7207EF30F00383714 /* NSObject+YFRuntiume.h */,
 				18188AD8207EF30F00383714 /* NSObject+YFRuntiume.m */,
+				18188B10207F2B2500383714 /* method_exchange */,
 				18188ACD207EE8AD00383714 /* objc_msgSend */,
 				18188ABD207EE88200383714 /* Main.storyboard */,
 				18188AC0207EE88200383714 /* Assets.xcassets */,
@@ -92,6 +103,19 @@
 				18188AD2207EE8F100383714 /* YFPersonModel.m */,
 			);
 			path = objc_msgSend;
+			sourceTree = "<group>";
+		};
+		18188B10207F2B2500383714 /* method_exchange */ = {
+			isa = PBXGroup;
+			children = (
+				18188B14207F2D7600383714 /* YFMethod_changeVC.h */,
+				18188B15207F2D7600383714 /* YFMethod_changeVC.m */,
+				18188B17207F2DBA00383714 /* UIImage+YFCategory.h */,
+				18188B18207F2DBA00383714 /* UIImage+YFCategory.m */,
+				18188B1E207F30BE00383714 /* 布鲁克.jpeg */,
+				18188B1F207F30BE00383714 /* 路飞.jpeg */,
+			);
+			path = method_exchange;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +180,8 @@
 				18188AC4207EE88200383714 /* LaunchScreen.storyboard in Resources */,
 				18188AC1207EE88200383714 /* Assets.xcassets in Resources */,
 				18188ABF207EE88200383714 /* Main.storyboard in Resources */,
+				18188B20207F30BE00383714 /* 布鲁克.jpeg in Resources */,
+				18188B21207F30BE00383714 /* 路飞.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +195,8 @@
 				18188AD0207EE8D200383714 /* YFObjc_msgSend.m in Sources */,
 				18188AD9207EF31000383714 /* NSObject+YFRuntiume.m in Sources */,
 				18188AD3207EE8F100383714 /* YFPersonModel.m in Sources */,
+				18188B16207F2D7600383714 /* YFMethod_changeVC.m in Sources */,
+				18188B19207F2DBA00383714 /* UIImage+YFCategory.m in Sources */,
 				18188ABC207EE88200383714 /* ViewController.m in Sources */,
 				18188AC7207EE88200383714 /* main.m in Sources */,
 				18188AB9207EE88200383714 /* AppDelegate.m in Sources */,

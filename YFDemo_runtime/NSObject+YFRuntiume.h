@@ -10,6 +10,7 @@
 
 @interface NSObject (YFRuntiume)
 
+#pragma mark  ----- 消息发送 -----
 /**
  *实例方法
  */
@@ -18,6 +19,18 @@
  *类方法
  */
 +(id)msgSendToClass_invocation:(Class)YSClass Selector:(SEL)selector Prarms:(NSArray*)params NeedReturn:(BOOL)needReturn;
+
+#pragma mark  ----- 方法替换 -----
+/**
+ *替换实例方法(在+load中调用)
+ */
++ (void)swizzleSelector:(SEL)originalSelector withSelector:(SEL)swizzledSelector withClass:(Class)classType;
+
+/**
+ *替换类方法(在+load中调用)
+ */
++ (void)swizzleClassSelector:(SEL)originalSelector withClassSelector:(SEL)swizzledSelector withClass:(Class)classType;
+
 
 
 @end
