@@ -13,6 +13,9 @@
 		18188AC1207EE88200383714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18188AC0207EE88200383714 /* Assets.xcassets */; };
 		18188AC4207EE88200383714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18188AC2207EE88200383714 /* LaunchScreen.storyboard */; };
 		18188AC7207EE88200383714 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18188AC6207EE88200383714 /* main.m */; };
+		18188AD0207EE8D200383714 /* YFObjc_msgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 18188ACF207EE8D200383714 /* YFObjc_msgSend.m */; };
+		18188AD3207EE8F100383714 /* YFPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18188AD2207EE8F100383714 /* YFPersonModel.m */; };
+		18188AD9207EF31000383714 /* NSObject+YFRuntiume.m in Sources */ = {isa = PBXBuildFile; fileRef = 18188AD8207EF30F00383714 /* NSObject+YFRuntiume.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		18188AC3207EE88200383714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18188AC5207EE88200383714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18188AC6207EE88200383714 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18188ACE207EE8D200383714 /* YFObjc_msgSend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFObjc_msgSend.h; sourceTree = "<group>"; };
+		18188ACF207EE8D200383714 /* YFObjc_msgSend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFObjc_msgSend.m; sourceTree = "<group>"; };
+		18188AD1207EE8F100383714 /* YFPersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFPersonModel.h; sourceTree = "<group>"; };
+		18188AD2207EE8F100383714 /* YFPersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPersonModel.m; sourceTree = "<group>"; };
+		18188AD7207EF30F00383714 /* NSObject+YFRuntiume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YFRuntiume.h"; sourceTree = "<group>"; };
+		18188AD8207EF30F00383714 /* NSObject+YFRuntiume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YFRuntiume.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,9 @@
 				18188AB8207EE88200383714 /* AppDelegate.m */,
 				18188ABA207EE88200383714 /* ViewController.h */,
 				18188ABB207EE88200383714 /* ViewController.m */,
+				18188AD7207EF30F00383714 /* NSObject+YFRuntiume.h */,
+				18188AD8207EF30F00383714 /* NSObject+YFRuntiume.m */,
+				18188ACD207EE8AD00383714 /* objc_msgSend */,
 				18188ABD207EE88200383714 /* Main.storyboard */,
 				18188AC0207EE88200383714 /* Assets.xcassets */,
 				18188AC2207EE88200383714 /* LaunchScreen.storyboard */,
@@ -69,6 +81,17 @@
 				18188AC6207EE88200383714 /* main.m */,
 			);
 			path = YFDemo_runtime;
+			sourceTree = "<group>";
+		};
+		18188ACD207EE8AD00383714 /* objc_msgSend */ = {
+			isa = PBXGroup;
+			children = (
+				18188ACE207EE8D200383714 /* YFObjc_msgSend.h */,
+				18188ACF207EE8D200383714 /* YFObjc_msgSend.m */,
+				18188AD1207EE8F100383714 /* YFPersonModel.h */,
+				18188AD2207EE8F100383714 /* YFPersonModel.m */,
+			);
+			path = objc_msgSend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +120,7 @@
 		18188AAC207EE88200383714 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YF;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = yafei;
 				TargetAttributes = {
@@ -142,6 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18188AD0207EE8D200383714 /* YFObjc_msgSend.m in Sources */,
+				18188AD9207EF31000383714 /* NSObject+YFRuntiume.m in Sources */,
+				18188AD3207EE8F100383714 /* YFPersonModel.m in Sources */,
 				18188ABC207EE88200383714 /* ViewController.m in Sources */,
 				18188AC7207EE88200383714 /* main.m in Sources */,
 				18188AB9207EE88200383714 /* AppDelegate.m in Sources */,
